@@ -1,5 +1,5 @@
 # Free Fire Tournament App: Supabase Setup
-
+ 
 ```
 ff-tournament/
 ├─ supabase/
