@@ -1,0 +1,21 @@
+project_id = "ff-tournament"
+
+[functions.create-payment-order]
+verify_jwt = false   # JWT is verified inside the function (works with new key formats)
+
+[functions.verify-payment]
+verify_jwt = false
+
+[functions.approve-results]
+verify_jwt = false
+
+[functions.admin-action]
+verify_jwt = false
+
+# Paytm cannot send a JWT. Authenticity is proven by checksum + Transaction Status API.
+[functions.paytm-callback]
+verify_jwt = false
+
+# Protected by the x-cron-secret header.
+[functions.release-expired-slots]
+verify_jwt = false
