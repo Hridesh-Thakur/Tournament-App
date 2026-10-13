@@ -1,7 +1,6 @@
 .env
 .env.secrets
 .env.local
-.env.example
 node_modules/
 .DS_Store
 supabase/.temp/
